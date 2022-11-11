@@ -55,7 +55,7 @@ INT WINAPI WinMain(HINSTANCE hInst, HINSTANCE hPrevInst, LPSTR lpszCmdLine, int 
 
 	 
 	ShowWindow(hWnd, nCmdShow);
-	UpdateWindow(hWnd);
+	UpdateWindow(hWnd) ;
 
 	 
 	while (GetMessage(&lpMsg, NULL, 0, 0))
