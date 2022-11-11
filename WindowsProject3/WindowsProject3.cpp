@@ -1,6 +1,7 @@
 #include<Windows.h>
 #include<tchar.h>
-
+ 
+ 
 namespace glb {
 	int margin = 10;
 	TCHAR str[128], inf[128], winInfo[128];
@@ -49,13 +50,14 @@ INT WINAPI WinMain(HINSTANCE hInst, HINSTANCE hPrevInst, LPSTR lpszCmdLine, int 
 		NULL,
 		hInst,
 		NULL
+
 	);
 
-	/* 4. Отображение окна */
+	 
 	ShowWindow(hWnd, nCmdShow);
 	UpdateWindow(hWnd);
 
-	/* 5. Запуск цикла обработки сooбщений */
+	 
 	while (GetMessage(&lpMsg, NULL, 0, 0))
 	{
 		TranslateMessage(&lpMsg);
